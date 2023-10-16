@@ -4,7 +4,7 @@ number = int(input("Enter your numerical grade: "))
 
 # Calculate the letter grade based on the grading scale
 letter_grade = ""
-if number >= 90:
+if 90 <= number <= 100:
     letter_grade = "A"
 elif number >= 80:
     letter_grade = "B"
