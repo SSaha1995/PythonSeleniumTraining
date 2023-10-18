@@ -4,16 +4,17 @@ number = int(input("Enter your numerical grade: "))
 
 # Calculate the letter grade based on the grading scale
 letter_grade = ""
-if number >= 90:
+if 90 <= number <= 100:
     letter_grade = "A"
-elif number >= 80:
+elif 80 <= number <= 89:
     letter_grade = "B"
-elif number >= 70:
+elif 70 <= number <= 79:
     letter_grade = "C"
-elif number >= 60:
+elif 60 <= number <= 69:
     letter_grade = "D"
-else:
+elif 0 <= number <= 59:
     letter_grade = "F"
-
+else:
+    letter_grade = "Not in Scope"
 # Display the letter grade to the user
 print("Your letter grade is:", letter_grade)
